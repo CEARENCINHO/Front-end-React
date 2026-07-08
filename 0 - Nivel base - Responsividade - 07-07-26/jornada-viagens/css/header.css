@@ -1,0 +1,20 @@
+header{
+    background-color: var(--background-tertiaty-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo{
+    width: 68px;
+    height: 64px;
+    display: inline-block;
+    padding: 38px 48px;
+}
+.navigation-menu{
+    margin-top: 24px;
+}
+nav{
+    display: none;
+}

@@ -4,13 +4,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 38px 47px;
 }
 
 .logo{
     width: 68px;
     height: 64px;
     display: inline-block;
-    padding: 38px 48px;
 }
 .navigation-menu{
     margin-top: 24px;

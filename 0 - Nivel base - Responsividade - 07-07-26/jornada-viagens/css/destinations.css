@@ -65,3 +65,25 @@
     width: 280px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .destinations-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .item {
+    width: 588px;
+    height: 750px;
+  }
+
+  .img-item.tokyo, .img-item.osaka{
+    width: 588px;
+    height: 452px;
+  }
+
+    
+}

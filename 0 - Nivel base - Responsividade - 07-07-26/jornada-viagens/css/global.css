@@ -41,6 +41,7 @@ button {
 body {
   font-family: "Montserrat";
   color: var(--text-primary-color);
+    
 }
 
 .section-title h2 {
@@ -69,6 +70,7 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 64px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

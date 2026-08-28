@@ -9,8 +9,8 @@ const leitor = readline.createInterface({
 })
 
 leitor.question("Qual é seu nome? ", (nome) => {
-    console.log('Ola', nome)
-    console.log('Boas vindas ao nosso sistema!')
+    // console.log('Ola', nome)
+    // console.log('Boas vindas ao nosso sistema!')
 
     leitor.question('Qual é sua idade? ', (idade) => {
         if (Number(idade) >= 18) {

@@ -20,4 +20,3 @@ nome.push('Antonia')
 console.log(nome)
 nome.shift('John')
 console.log(nome)
-

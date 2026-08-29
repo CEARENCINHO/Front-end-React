@@ -2,12 +2,16 @@
   "name": "2---criando-api-nodejs---29-08-2026",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type":"module",
+  "main": "servidor.js",
+  "type": "module",
   "scripts": {
+    "dev":"nodemon servidor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
 }

@@ -1,14 +1,17 @@
-import http from "http";
-
+// import http from "http";
+import app from './src/app.js'
 // Porta de comunicação
 const PORT = 3000 
 
+// criando rotas
+const rotas = {
+    '/':'Curso de Node.js',
+    '/livros':'Entrei na rota livros',
+    '/autores':'Entrei na rota autores'
+}
 
-const server = http.createServer((req,res) => {
-    res.writeHead(404,{'content-type':'text/plain'})
-    res.end('Curso de Node.js')
-})
 
-server.listen(PORT, () => {
+// colocar o servidor no ar
+app.listen(PORT, () => {
     console.log('Servidor ouvindo!')
 })

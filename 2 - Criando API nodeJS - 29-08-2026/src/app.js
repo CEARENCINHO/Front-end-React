@@ -15,6 +15,8 @@ const livros = [
     }
 ]
 
+// GET = pegar; POST = criar; PUT = atualizar/alterar
+
 function buscarLivros(id){
     return livros.findIndex(livros => { // findIndex = ele procura um indice dentro da array
         return livros.id === Number(id)
@@ -41,5 +43,16 @@ app.post('/livros', (req,res) => {
     res.status(201).send('Livro cadastrado com sucesso!')
 })
 
+app.put('/livros/:id', (req,res) => {
+    const index = buscarLivros(req.params.id)
+    livros[index].titulo = req.body.titulo; // aqui eu pego a req e pego do body da API a parte do json que tem "titulo"
+    res.status(200).json(livros[index])
+})
+
+app.delete('/livros/:id', (req,res) => {
+    const index = buscarLivros(req.params.id)
+    livros.splice(index,1)
+    res.status(200).send('Livro removido com sucesso!')
+})
 
 export default app;
